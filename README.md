@@ -14,7 +14,7 @@ I might not finish this, and I dont really think that will be to big of a deal, 
 	- Added draw_rect, basically a fancy pygame.draw.rect
 	- Added set_bg, fills background with a solid color and if so chosen displays an image
 
-### PyEngine ver. 0.1.2: March 4th, 2021
+### PyEngine ver. 0.2.1: March 4th, 2021
 - Added Mouse class
 	- Added __init__
 	- Added show_cursor, displays the cursor img at the location of the cursor
