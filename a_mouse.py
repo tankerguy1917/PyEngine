@@ -34,3 +34,6 @@ class Mouse:
 			self.mouse_rect = pygame.Rect(self.x, self.y, self.img.get_width() / 2, self.img.get_height() / 2)
 			self.mouse_rect.topleft = (self.x / res[0], self.y / res[1])
 			surf.blit(self.img, (self.mouse_rect[0], self.mouse_rect[1]))
+
+	def set_cursor(self, img):
+		self.img = img
