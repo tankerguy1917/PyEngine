@@ -19,7 +19,6 @@ class Mouse:
 		self.img = img
 		self.in_middle = in_middle
 		self.mouse_vis = mouse_vis
-		self.mouse_rect = pygame.Rect(self.x, self.y, self.img.get_width(), self.img.get_height())
 		pygame.mouse.set_visible(mouse_vis)
 
 	def show_cursor(self, surf, res):
@@ -28,5 +27,10 @@ class Mouse:
 		res: (int, int). See docs.txt for more info
 		"""
 		if self.in_middle:
-			self.mouse_rect.center = (self.x - self.img.get_width() / res[0], self.y - self.img.get_height() / res[1])
-			surf.blit(self.img, (self.mouse_rect[0] / res[0], self.mouse_rect[1] / res[1]))
+			self.mouse_rect = pygame.Rect(self.x, self.y, self.img.get_width() / 2, self.img.get_height() / 2)
+			self.mouse_rect.center = (self.x / res[0], self.y / res[1])
+			surf.blit(self.img, (self.mouse_rect[0] - self.img.get_width() / 4, self.mouse_rect[1] - self.img.get_height() / 4))
+		else:
+			self.mouse_rect = pygame.Rect(self.x, self.y, self.img.get_width() / 2, self.img.get_height() / 2)
+			self.mouse_rect.topleft = (self.x / res[0], self.y / res[1])
+			surf.blit(self.img, (self.mouse_rect[0], self.mouse_rect[1]))
