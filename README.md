@@ -6,7 +6,7 @@ Most of what is in it you can probably just do with pygame, but I'm doing it any
 Initially, this was just for me to test out using classes and class methods, but then I decided to make a game engin out of it.
 I might not finish this, and I dont really think that will be to big of a deal, I mean, the whole purpose of this originally was to get better at using classes, and it fufulled its purpose
 
-# Version Change log
+# Version
 ### PyEngine ver. 0.1.1: March 3rd, 2021
 - Added Screen class
 	- Added __init__
@@ -20,3 +20,10 @@ I might not finish this, and I dont really think that will be to big of a deal, 
 	- Added show_cursor, displays the cursor img at the location of the cursor
 - Added bug.txt
 - Added docs.txt, for better, more indepth explination of how things work
+
+### PyEngine ver. 0.2.2: March 5th, 2021
+- Redid Mouse.show_cursor
+
+### PyEngine ver. 0.2.3: March 6th, 2021
+- Fixed Mouse.show_cursor
+
