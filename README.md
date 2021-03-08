@@ -9,14 +9,14 @@ I might not finish this, and I dont really think that will be to big of a deal, 
 # Version
 ### PyEngine ver. 0.1.1: March 3rd, 2021
 - Added Screen class
-	- Added __init__
+	- Added \__init__
 	- Added show_img, basically a fancy blit
 	- Added draw_rect, basically a fancy pygame.draw.rect
 	- Added set_bg, fills background with a solid color and if so chosen displays an image
 
 ### PyEngine ver. 0.2.1: March 4th, 2021
 - Added Mouse class
-	- Added __init__
+	- Added \__init__
 	- Added show_cursor, displays the cursor img at the location of the cursor
 - Added bug.txt
 - Added docs.txt, for better, more indepth explination of how things work
@@ -27,3 +27,10 @@ I might not finish this, and I dont really think that will be to big of a deal, 
 ### PyEngine ver. 0.2.3: March 6th, 2021
 - Fixed Mouse.show_cursor
 
+### PyEngine ver 0.3.1: March 7th, 2021
+- Added Button class
+	- Added \__init__
+	- Added show_button
+	- Added set_img
+- For Mouse class
+	- Added set_cursor
