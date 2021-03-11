@@ -48,3 +48,12 @@ You are free to use this in any way you like. You can use this to do whatever yo
 
 ### PyEngine ver 0.4.2 March 9th, 2021
 - Got Entity.collide1 working, kind of.
+
+### PyEngine ver 0.4.3 March 10th, 2021
+- Tweaked self.grav_effect/self.collide1
+
+### PyEngine ver 0.5.1 March 11th, 2021
+- Removed Entity.grav
+- Removed Entity.grav_effect
+- Removed Entity.jump
+- Made the engine more top down than side scroll
